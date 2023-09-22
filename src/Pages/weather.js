@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function CondicionAtmosferica() {
   const url = "https://api.datos.gob.mx/v1/condiciones-atmosfericas";
@@ -52,7 +54,7 @@ function CondicionAtmosferica() {
 
   return (
     <>
-      <select onChange={(e) => setEstadoActual(e.target.value)}>
+      <select className="form-select"  onChange={(e) => setEstadoActual(e.target.value)}>
         <option value=""> Seleccion una opción</option>
         {estadosMx.map((opcion) => (
           <option key={opcion.id} value={opcion.name}>
@@ -62,15 +64,29 @@ function CondicionAtmosferica() {
       </select>
       {estadoActual}
       <h1> Estado del tiempo</h1>
-      {datos.map((ciudad, index) => {
-        return (
-          <div>
-            <p>
-              {ciudad.name} - <i>{ciudad.skydescriptionlong}</i>
-            </p>
-          </div>
-        );
-      })}
+      
+      <table className="table table-bordered" width="100%">
+          <thead>
+            <tr >
+              <th >Ciudad</th>
+              <th >Tiempo</th>
+            </tr>
+          </thead>
+      <tbody>
+
+      
+      {datos.map((ciudad, index) => ( 
+          
+            <tr >
+            <td>{ciudad.name}</td>
+            <td>{ciudad.skydescriptionlong}</td>
+          
+          </tr>
+        
+      ))}
+      </tbody>
+      </table>
+      
     </>
   );
 }
