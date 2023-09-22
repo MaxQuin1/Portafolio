@@ -3,39 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function CondicionAtmosferica() {
-  const url = "https://api.datos.gob.mx/v1/condiciones-atmosfericas";
+  const url = ''/*https://api.datos.gob.mx/v1/condiciones-atmosfericas*/;
   const estadosMx = [
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
-    { id: 1, name: "Aguascalientes" },
     { id: 1, name: "Aguascalientes" },
   ];
 
@@ -86,7 +55,6 @@ function CondicionAtmosferica() {
       ))}
       </tbody>
       </table>
-      
     </>
   );
 }
