@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function CondicionAtmosferica() {
-  const url = ''/*https://api.datos.gob.mx/v1/condiciones-atmosfericas*/;
+  const url = '' /*'https://api.datos.gob.mx/v1/condiciones-atmosfericas';*/
   const estadosMx = [
     { id: 1, name: "Aguascalientes" },
   ];
@@ -23,7 +23,8 @@ function CondicionAtmosferica() {
 
   return (
     <>
-      <select className="form-select"  onChange={(e) => setEstadoActual(e.target.value)}>
+    <h1 className="font-bold text-center text-4xl "> Estado del tiempo</h1>
+      <select className="form-select h-[20%] w-[20%]"  onChange={(e) => setEstadoActual(e.target.value)}>
         <option value=""> Seleccion una opción</option>
         {estadosMx.map((opcion) => (
           <option key={opcion.id} value={opcion.name}>
@@ -31,9 +32,8 @@ function CondicionAtmosferica() {
           </option>
         ))}
       </select>
-      {estadoActual}
-      <h1> Estado del tiempo</h1>
-      
+      <h1 className="text-2xl">Estado seleccionado: {estadoActual}</h1>
+      <div className=" lg:w-4/1 mx-5">
       <table className="table table-bordered" width="100%">
           <thead>
             <tr >
@@ -55,6 +55,7 @@ function CondicionAtmosferica() {
       ))}
       </tbody>
       </table>
+      </div>
     </>
   );
 }
