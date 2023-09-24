@@ -3,13 +3,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function CondicionAtmosferica() {
-  const url = '' /*'https://api.datos.gob.mx/v1/condiciones-atmosfericas';*/
+  const url = 'https://api.datos.gob.mx/v1/condiciones-atmosfericas';
   const estadosMx = [
     { id: 1, name: "Aguascalientes" },
+    { id: 2, name: "Baja California" },
+    { id: 3, name: "Chihuahua" },
+    { id: 4, name: "Campeche" },
+    { id: 5, name: "Coahuila" },
   ];
 
   const [datos, setDatos] = useState([]);
-  const [estadoActual, setEstadoActual] = useState("Quintana Roo");
+  const [estadoActual, setEstadoActual] = useState();
+  const [ciudadesFiltradas, setCiudadesFiltradas] = useState([]);
 
   const consultarDatos = () => {
     return fetch(url)
@@ -20,6 +25,11 @@ function CondicionAtmosferica() {
   useEffect(() => {
     consultarDatos();
   }, []);
+
+  useEffect(() => {
+      const ciudadesEnEstado = datos.filter((ciudad) => ciudad.state === estadoActual);
+      setCiudadesFiltradas(ciudadesEnEstado);
+  }, [estadoActual, datos]);
 
   return (
     <>
@@ -41,19 +51,14 @@ function CondicionAtmosferica() {
               <th >Tiempo</th>
             </tr>
           </thead>
-      <tbody>
-
-      
-      {datos.map((ciudad, index) => ( 
-          
-            <tr >
-            <td>{ciudad.name}</td>
-            <td>{ciudad.skydescriptionlong}</td>
-          
-          </tr>
-        
-      ))}
-      </tbody>
+          <tbody>
+            {ciudadesFiltradas.map((ciudad, index) => (
+              <tr key={index}>
+                <td>{ciudad.name}</td>
+                <td>{ciudad.skydescriptionlong}</td>
+              </tr>
+            ))}
+          </tbody>
       </table>
       </div>
     </>
