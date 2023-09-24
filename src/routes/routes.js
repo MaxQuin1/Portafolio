@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import DashBoard from "../components/DashBoard";
-import CondicionAtmosferica from "../Pages/weather";
+import CondicionAtmosferica from "../Pages/CondicionAtmosferica";
 
 export const rutas = createBrowserRouter([
     {

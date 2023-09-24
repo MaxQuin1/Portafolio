@@ -14,18 +14,11 @@ export default function DashBoard() {
             <ul className="hidden md:flex p-10 font-bold">
               <li>
              
-                  <box-icon name='bar-chart-square' type='solid' rotate='90' color='#0053A5' ></box-icon>
+                  {/* <box-icon name='bar-chart-square' type='solid' rotate='90' color='#0053A5' ></box-icon> */}
                   <a href="/weather">
                    <span className="p-5 text-2xl">Clima en Mexico</span>
-                    </a>
-
-                  <span className="p-5 text-2xl">Clima en EU</span>
-                  <span className="p-5 text-2xl">Clima en Canada</span>
-                  <span className="p-5 text-2xl">Clima en Colombia</span>
-                  <span className="p-5 text-2xl">Clima en Argentia</span>
-                  <span className="p-5 text-2xl">Clima en España</span>
-                  
-                
+                  </a>
+              
               </li>
             </ul>
             </div>
