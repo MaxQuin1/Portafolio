@@ -8,7 +8,7 @@ export const rutas = createBrowserRouter([
       element: <DashBoard />,
     },
     {
-      path: "/weather",
+      path: "/CondicionAtmosferica",
       element: <CondicionAtmosferica />,
     }
 ]);

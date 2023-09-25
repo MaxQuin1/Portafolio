@@ -3,13 +3,38 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function CondicionAtmosferica() {
-  const url = 'https://api.datos.gob.mx/v1/condiciones-atmosfericas';
+  const url = 'https://api.datos.gob.mx/v1/condiciones-atmosfericas?pageSize=10000';
   const estadosMx = [
     { id: 1, name: "Aguascalientes" },
     { id: 2, name: "Baja California" },
     { id: 3, name: "Chihuahua" },
     { id: 4, name: "Campeche" },
     { id: 5, name: "Coahuila" },
+    { id: 6, name: "Colima" },
+    { id: 7, name: "Chiapas" },
+    { id: 8, name: "Durango" },
+    { id: 9, name: "Baja California Sur" },
+    { id: 10, name: "Ciudad de Mexico" },
+    { id: 11, name: "Guanajuato" },
+    { id: 12, name: "Guerrero" },
+    { id: 13, name: "Hidalgo" },
+    { id: 14, name: "Jalisco" },
+    { id: 15, name: "Estado de Mexico" },
+    { id: 16, name: "Michoacan" },
+    { id: 17, name: "Nayarit" },
+    { id: 18, name: "Nuevo Leon" },
+    { id: 19, name: "Oaxaca" },
+    { id: 20, name: "Puebla" },
+    { id: 21, name: "Queretaro" },
+    { id: 22, name: "Quintana Roo" },
+    { id: 23, name: "San Luis Potosi" },
+    { id: 24, name: "Sinaloa" },
+    { id: 25, name: "Sonora" },
+    { id: 26, name: "Tabasco" },
+    { id: 27, name: "Tlaxcala" },
+    { id: 28, name: "Veracruz" },
+    { id: 29, name: "Yucatan" },
+    { id: 30, name: "Zacatecas" },
   ];
 
   const [datos, setDatos] = useState([]);
