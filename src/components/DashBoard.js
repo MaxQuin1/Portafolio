@@ -15,7 +15,7 @@ export default function DashBoard() {
               <li>
              
                   {/* <box-icon name='bar-chart-square' type='solid' rotate='90' color='#0053A5' ></box-icon> */}
-                  <a href="/weather">
+                  <a href="/CondicionAtmosferica">
                    <span className="p-5 text-2xl">Clima en Mexico</span>
                   </a>
               
