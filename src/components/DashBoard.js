@@ -40,7 +40,7 @@ export default function DashBoard() {
         <h1 className="text-5xl p-3 font-bold">Bienvenido de vuelta</h1>
         <p className="text-2xl bg-amber-200 text-white p-2 rounded-lg">
           <a href='/CondicionAtmosferica'>
-            Haz click para saber mas de nosotros
+            Haz click para ver el clima en mexico
             </a>
         </p>
         <h1 className="text-2xl  p-2">Si tienes algun problema no dudes en contactarnos</h1>
