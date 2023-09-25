@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import NavDash from "../components/NavDash";
 
 
 function CondicionAtmosferica() {
@@ -58,6 +59,7 @@ function CondicionAtmosferica() {
 
   return (
     <>
+    
     <h1 className="font-bold text-center text-4xl "> Estado del tiempo</h1>
       <select className="form-select h-[20%] w-[20%]"  onChange={(e) => setEstadoActual(e.target.value)}>
         <option value=""> Seleccion una opción</option>
@@ -86,6 +88,7 @@ function CondicionAtmosferica() {
           </tbody>
       </table>
       </div>
+   
     </>
   );
 }
