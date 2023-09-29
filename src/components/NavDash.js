@@ -11,7 +11,6 @@ function NavDash() {
         type="button"
         class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-red-400 dark:focus:ring-gray-600"
       >
-        <span class="sr-only">Open sidebar</span>
         <svg
           class="w-6 h-6"
           aria-hidden="true"
@@ -30,57 +29,67 @@ function NavDash() {
       >
         <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <ul class="space-y-2 font-medium">
-            
-          <li>
-                <a
-                  href="/CondicionAtmosferica"
-                  className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
-                >
-                  <box-icon name='cloud' type='solid' animation='tada' rotate='90' color='#7DA4FA' ></box-icon>
-                  <span className="flex-1 ml-3 whitespace-nowrap">
-                    {" "}
-                    Clima{" "}
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/CondicionAtmosferica"
-                  className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
-                >
-                  <box-icon name='cloud' type='solid' animation='tada' rotate='90' color='#7DA4FA' ></box-icon>
-                  <span className="flex-1 ml-3 whitespace-nowrap">
-                    {" "}
-                    Clima{" "}
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/CondicionAtmosferica"
-                  className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
-                >
-                  <link to=""></link>
-                  <box-icon name='cloud' type='solid' animation='tada' rotate='90' color='#7DA4FA' ></box-icon>
-                  <span className="flex-1 ml-3 whitespace-nowrap">
-                    {" "}
-                    Clima{" "}
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/CondicionAtmosferica"
-                  className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
-                >
-                  <box-icon name='cloud' type='solid' animation='tada' rotate='90' color='#7DA4FA' ></box-icon>
-                  <span className="flex-1 ml-3 whitespace-nowrap">
-                    {" "}
-                    Clima{" "}
-                  </span>
-                </a>
-              </li>
-            
+            <li>
+              <a
+                href="/CondicionAtmosferica"
+                className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
+              >
+                <box-icon
+                  name="cloud"
+                  type="solid"
+                  animation="tada"
+                  rotate="90"
+                  color="#7DA4FA"
+                ></box-icon>
+                <span className="flex-1 ml-3 whitespace-nowrap"> Clima </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/CondicionAtmosferica"
+                className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
+              >
+                <box-icon
+                  name="cloud"
+                  type="solid"
+                  animation="tada"
+                  rotate="90"
+                  color="#7DA4FA"
+                ></box-icon>
+                <span className="flex-1 ml-3 whitespace-nowrap"> Clima </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/CondicionAtmosferica"
+                className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
+              >
+                <link to=""></link>
+                <box-icon
+                  name="cloud"
+                  type="solid"
+                  animation="tada"
+                  rotate="90"
+                  color="#7DA4FA"
+                ></box-icon>
+                <span className="flex-1 ml-3 whitespace-nowrap"> Clima </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/CondicionAtmosferica"
+                className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
+              >
+                <box-icon
+                  name="cloud"
+                  type="solid"
+                  animation="tada"
+                  rotate="90"
+                  color="#7DA4FA"
+                ></box-icon>
+                <span className="flex-1 ml-3 whitespace-nowrap"> Clima </span>
+              </a>
+            </li>
           </ul>
         </div>
       </aside>

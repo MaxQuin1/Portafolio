@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavDash from "../components/NavDash";
-
 
 function CondicionAtmosferica() {
-  const url = 'https://api.datos.gob.mx/v1/condiciones-atmosfericas?pageSize=10000';
+  const url =
+    "https://api.datos.gob.mx/v1/condiciones-atmosfericas?pageSize=10000";
   const estadosMx = [
     { id: 1, name: "Aguascalientes" },
     { id: 2, name: "Baja California" },
@@ -53,15 +52,26 @@ function CondicionAtmosferica() {
   }, []);
 
   useEffect(() => {
-      const ciudadesEnEstado = datos.filter((ciudad) => ciudad.state === estadoActual);
-      setCiudadesFiltradas(ciudadesEnEstado);
-  }, [estadoActual, datos]);
+    const ciudadesUnicas = {};
+    const ciudadesFiltradas = datos.filter((ciudad) => {
+      if (ciudadesUnicas[ciudad.name]) {
+        return false;
+      }
+      ciudadesUnicas[ciudad.name] = true;
+      return ciudad.state === estadoActual;
+    });
+    setCiudadesFiltradas(ciudadesFiltradas);
+  }, [estadoActual, datos])
+
+  let c = 1;
 
   return (
     <>
-    
-    <h1 className="font-bold text-center text-4xl "> Estado del tiempo</h1>
-      <select className="form-select h-[20%] w-[20%]"  onChange={(e) => setEstadoActual(e.target.value)}>
+      <h1 className="font-bold text-center text-4xl "> Estado del tiempo</h1>
+      <select
+        className="form-select h-[20%] w-[20%]"
+        onChange={(e) => setEstadoActual(e.target.value)}
+      >
         <option value=""> Seleccion una opción</option>
         {estadosMx.map((opcion) => (
           <option key={opcion.id} value={opcion.name}>
@@ -71,24 +81,25 @@ function CondicionAtmosferica() {
       </select>
       <h1 className="text-2xl">Estado seleccionado: {estadoActual}</h1>
       <div className=" lg:w-4/1 mx-5">
-      <table className="table table-bordered" width="100%">
+        <table className="table table-bordered" width="100%">
           <thead>
-            <tr >
-              <th >Ciudad</th>
-              <th >Tiempo</th>
+            <tr>
+              <th>#</th>
+              <th>Ciudad</th>
+              <th>Tiempo</th>
             </tr>
           </thead>
           <tbody>
             {ciudadesFiltradas.map((ciudad, index) => (
               <tr key={index}>
+                <td>{c++}</td>
                 <td>{ciudad.name}</td>
                 <td>{ciudad.skydescriptionlong}</td>
               </tr>
             ))}
           </tbody>
-      </table>
+        </table>
       </div>
-   
     </>
   );
 }
