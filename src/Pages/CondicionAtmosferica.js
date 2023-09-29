@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavDash from "../components/NavDash";
-import imagen1 from "../img/img1.jpg";
 
 function CondicionAtmosferica() {
   const url =
