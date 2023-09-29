@@ -31,7 +31,7 @@ function NavDash() {
           <ul class="space-y-2 font-medium">
             <li>
               <a
-                href="/CondicionAtmosferica"
+                href="/"
                 className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
                 <box-icon
@@ -41,7 +41,7 @@ function NavDash() {
                   rotate="90"
                   color="#7DA4FA"
                 ></box-icon>
-                <span className="flex-1 ml-3 whitespace-nowrap"> Clima </span>
+                <span className="flex-1 ml-3 whitespace-nowrap"> DashBoard </span>
               </a>
             </li>
             <li>
