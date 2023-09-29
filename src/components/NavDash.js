@@ -1,17 +1,15 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import "boxicons";
 
 function NavDash() {
   return (
-    <div class="fixed container">
+    <div class="fixed container ">
       <button
         data-drawer-target="sidebar-multi-level-sidebar"
         data-drawer-toggle="sidebar-multi-level-sidebar"
         aria-controls="sidebar-multi-level-sidebar"
         type="button"
-        class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-red-400 dark:focus:ring-gray-600"
       >
         <span class="sr-only">Open sidebar</span>
         <svg
@@ -32,9 +30,57 @@ function NavDash() {
       >
         <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <ul class="space-y-2 font-medium">
-            <li>
-              <a href="/CondicionAtmosferica">Clima</a>
-            </li>
+            
+          <li>
+                <a
+                  href="/CondicionAtmosferica"
+                  className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
+                >
+                  <box-icon name='cloud' type='solid' animation='tada' rotate='90' color='#7DA4FA' ></box-icon>
+                  <span className="flex-1 ml-3 whitespace-nowrap">
+                    {" "}
+                    Clima{" "}
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/CondicionAtmosferica"
+                  className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
+                >
+                  <box-icon name='cloud' type='solid' animation='tada' rotate='90' color='#7DA4FA' ></box-icon>
+                  <span className="flex-1 ml-3 whitespace-nowrap">
+                    {" "}
+                    Clima{" "}
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/CondicionAtmosferica"
+                  className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
+                >
+                  <link to=""></link>
+                  <box-icon name='cloud' type='solid' animation='tada' rotate='90' color='#7DA4FA' ></box-icon>
+                  <span className="flex-1 ml-3 whitespace-nowrap">
+                    {" "}
+                    Clima{" "}
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/CondicionAtmosferica"
+                  className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
+                >
+                  <box-icon name='cloud' type='solid' animation='tada' rotate='90' color='#7DA4FA' ></box-icon>
+                  <span className="flex-1 ml-3 whitespace-nowrap">
+                    {" "}
+                    Clima{" "}
+                  </span>
+                </a>
+              </li>
+            
           </ul>
         </div>
       </aside>
