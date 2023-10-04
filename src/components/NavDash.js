@@ -31,22 +31,7 @@ function NavDash() {
           <ul class="space-y-2 font-medium">
             <li>
               <a
-                href="/"
-                className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
-              >
-                <box-icon
-                  name="cloud"
-                  type="solid"
-                  animation="tada"
-                  rotate="90"
-                  color="#7DA4FA"
-                ></box-icon>
-                <span className="flex-1 ml-3 whitespace-nowrap"> DashBoard </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="/CondicionAtmosferica"
+                href="/condicionAtmosferica"
                 className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
                 <box-icon
@@ -61,7 +46,22 @@ function NavDash() {
             </li>
             <li>
               <a
-                href="/CondicionAtmosferica"
+                href="/condicionAtmosferica"
+                className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
+              >
+                <box-icon
+                  name="cloud"
+                  type="solid"
+                  animation="tada"
+                  rotate="90"
+                  color="#7DA4FA"
+                ></box-icon>
+                <span className="flex-1 ml-3 whitespace-nowrap"> Clima </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/condicionAtmosferica"
                 className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
                 <link to=""></link>
@@ -77,7 +77,7 @@ function NavDash() {
             </li>
             <li>
               <a
-                href="/CondicionAtmosferica"
+                href="/condicionAtmosferica"
                 className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
                 <box-icon
