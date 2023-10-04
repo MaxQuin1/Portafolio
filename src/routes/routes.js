@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import DashBoard from "../components/DashBoard";
 import CondicionAtmosferica from "../Pages/CondicionAtmosferica";
+import Login from "../components/login";
 
 export const rutas = createBrowserRouter([
     {
@@ -8,7 +9,11 @@ export const rutas = createBrowserRouter([
       element: <DashBoard />,
     },
     {
-      path: "/CondicionAtmosferica",
+      path: "/condicionAtmosferica",
       element: <CondicionAtmosferica />,
+    },
+    {
+      path: "/login",
+      element: <Login />,
     }
 ]);
